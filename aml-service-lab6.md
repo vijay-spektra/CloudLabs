@@ -149,14 +149,16 @@ In this exercise you will deploy 2 modules to your IoT Edge device. One is a tel
 15. Select Next.<br/>
 16. Back in the Set Modules step, select **Next**.<br/>
 17. In the Specify Routes step, copy the **JSON** below into the text box. The first **route** transports messages from the temperature sensor to the machine learning module via the "amlInput" endpoint, which is the endpoint that all Azure Machine Learning modules use. The second **route** transports messages from the machine learning module to IoT Hub. In this route, `amlOutput` is the endpoint that all Azure Machine Learning modules use to output data, and `$upstream` denotes IoT Hub.
+
+ ```
+ {
+ "routes": {
+ "sensorToMachineLearning":"FROM /messages/modules/tempSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/machinelearningmodule/inputs/amlInput\")",
+ "machineLearningToIoTHub": "FROM /messages/modules/machinelearningmodule/outputs/amlOutput INTO $upstream"
+ }
+ }
 ```
-{
-"routes": {
-   "sensorToMachineLearning":"FROM /messages/modules/tempSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/machinelearningmodule/inputs/amlInput\")",
-   "machineLearningToIoTHub": "FROM /messages/modules/machinelearningmodule/outputs/amlOutput INTO $upstream"
-  }
-}
-```
+
 18. Select **Next**.<br/>
 19. In the **Review Deployment** step of the wizard, select **Submit**.<br/>
 20. Return to the device details page and select **Refresh**. In addition to the edgeAgent module that was created when you first started the service, you should see another runtime module called edgeHub and the tempSensor and machinelearningmodule listed. It may take about 5-10 minutes for the two new modules to appear and start running. Once you see a **Runtime Status** of Running for all modules you can proceed.
