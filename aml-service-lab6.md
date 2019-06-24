@@ -116,10 +116,11 @@ sudo systemctl status iotedge
 ```
 sudo iotedge list
 ```
-16. Your device is now configured and ready to receive cloud-deployed modules. 
+16. Your device is now configured and ready to receive cloud-deployed modules.
 
 ## Exercise 4 - Prepare the Azure Machine Learning module
 In this exercise you will use a previously trained model using the Azure Machine Learning SDK and deploy it along with a scoring script to an image. This model will score temperature telemetry data for anomalies. In a subsequent exercise, you will deploy this module to your IoT Edge device to perform scoring on the device.
+
 1. Return to **Visual Studio Code** and `06_deploy_to_iot_edge.py`.
 2. In Step 1, you will create a new or retrieve an existing **Azure Machine Learning** Workspace as has been demonstrated in previous labs. Execute Step 1.
 3. With a Workspace in hand you are ready to build a container that wraps your model. This consists of three steps- **creating** a Container Image, **registering** the Model and **creating** an Image. Execute Step 2 and wait for it to complete. When it is finished you will have a **Docker container** image that you will be able to deploy to your **IoT Edge** device.
