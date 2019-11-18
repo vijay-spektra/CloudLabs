@@ -20,7 +20,7 @@ En esta práctica de laboratorio, creará varios contenedores de Azure Cosmos DB
 
 1. En la ventana de Visual Studio Code que aparece, haga clic con el botón derecho en el panel ** Explorer ** y seleccione la opción de menú ** Abrir en el símbolo del sistema **.
 
-    ! [Abrir en el símbolo del sistema] (../ media / 02-open_command_prompt.jpg)
+    <img src="/media/02-open_command_prompt.jpg"> 
 
 1. En el panel de terminal abierto, ingrese y ejecute el siguiente comando:
 
@@ -68,7 +68,7 @@ En esta práctica de laboratorio, creará varios contenedores de Azure Cosmos DB
 
 1. Observe los archivos ** Program.cs ** y ** [nombre de carpeta] .csproj ** creados por .NET Core CLI.
 
-    ! [Archivos de proyecto] (../ media / 02-project_files.jpg)
+    <img src="/media/02-project_files.jpg">
 
 1. Haga doble clic en el enlace ** [nombre de carpeta] .csproj ** en el panel ** Explorer ** para abrir el archivo en el editor.
 
