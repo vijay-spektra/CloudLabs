@@ -73,8 +73,3 @@ En esta práctica de laboratorio, creará varios contenedores de Azure Cosmos DB
 1. Haga doble clic en el enlace ** [nombre de carpeta] .csproj ** en el panel ** Explorer ** para abrir el archivo en el editor.
 
 1. Ahora agregaremos un nuevo elemento XML ** PropertyGroup ** a la configuración del proyecto dentro del elemento ** Proyecto **. Para agregar un nuevo ** PropertyGroup **, inserte las siguientes líneas de código debajo de la línea que dice `` <Project Sdk = "Microsoft.NET.Sdk"> ``:
-
-    `` `xml
-    <Grupo de propiedades>
-        <LangVersion> última </LangVersion>
-    </PropertyGroup>
