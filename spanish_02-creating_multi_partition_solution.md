@@ -16,7 +16,7 @@ En este laboratorio, creará varios contenedores de Azure Cosmos DB. Algunos de 
 
 1. En el lado izquierdo del portal, haga clic en el enlace ** Grupos de recursos **.
 
-    ! [Grupos de recursos] (../ media / 02-resource_groups.jpg)
+    ! [Grupos de recursos] (https://raw.githubusercontent.com/CosmosDB/labs/master/dotnet/media/02-resource_groups.jpg)
 
 1. En la hoja ** Grupos de recursos **, ubique y seleccione el ** cosmosgroup-lab ** * Grupo de recursos *.
 
