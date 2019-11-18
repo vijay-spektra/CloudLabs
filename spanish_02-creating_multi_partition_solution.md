@@ -1,38 +1,8 @@
-# Crear una solución de varias particiones con Azure Cosmos DB
+# Crear un contenedor particionado con .NET SDK
 
-En este laboratorio, creará varios contenedores de Azure Cosmos DB. Algunos de los contenedores serán ilimitados y configurados con una clave de partición, mientras que otros serán de tamaño fijo. Luego utilizará la API de SQL y el SDK de .NET para consultar contenedores específicos utilizando una sola clave de partición o en varias claves de partición.
+En esta práctica de laboratorio, creará varios contenedores de Azure Cosmos DB con diferentes configuraciones y claves de partición. En laboratorios posteriores, utilizará la API de SQL y el SDK de .NET para consultar contenedores específicos utilizando una sola clave de partición o en varias claves de partición.
 
-## Inicie sesión en Azure Portal
-
-1. En una nueva ventana, inicie sesión en ** Azure Portal ** (<http://portal.azure.com>).
-
-1. Una vez que haya iniciado sesión, es posible que se le solicite iniciar un recorrido por el portal de Azure. Puede omitir este paso de manera segura.
-
-## Preparar
-
-> Antes de comenzar este laboratorio, deberá crear una base de datos y una colección de Azure Cosmos DB que usará en todo el laboratorio. El SDK de .NET requiere credenciales para conectarse a su cuenta de Azure Cosmos DB. Recopilará y almacenará estas credenciales para usar en todo el laboratorio.
-
-### Recuperar credenciales de cuenta
-
-1. En el lado izquierdo del portal, haga clic en el enlace ** Grupos de recursos **.
-
-    ! [Grupos de recursos] (https://github.com/CosmosDB/labs/blob/master/dotnet/media/02-lab_resource_group.jpg)
-
-1. En la hoja ** Grupos de recursos **, ubique y seleccione el ** cosmosgroup-lab ** * Grupo de recursos *.
-
-    ! [Grupo de recursos de laboratorio] (../ media / 02-lab_resource_group.jpg)
-
-1. En la hoja ** cosmosgroup-lab **, seleccione la cuenta ** Azure Cosmos DB ** que creó recientemente.
-
-    ! [Recurso Cosmos] (../ media / 02-cosmos_resource.jpg)
-
-1. En la hoja ** Azure Cosmos DB **, busque la sección ** Configuración ** y haga clic en el enlace ** Teclas **.
-
-    ! [Panel de teclas] (../ media / 02-keys_pane.jpg)
-
-1. En el panel ** Keys **, registre los valores en los campos ** CONNECTION STRING **, ** URI ** y ** PRIMARY KEY **. Utilizará estos valores más adelante en esta práctica de laboratorio.
-
-    ! [Credenciales] (../ media / 02-keys.jpg)
+> Si aún no ha completado la configuración del contenido del laboratorio, consulte las instrucciones para la Configuración de la cuenta antes de comenzar este laboratorio.
 
 ## Crear contenedores con .NET SDK
 
@@ -44,7 +14,7 @@ En este laboratorio, creará varios contenedores de Azure Cosmos DB. Algunos de 
 
 1. En la nueva carpeta, haga clic derecho en la carpeta y seleccione la opción de menú ** Abrir con código **.
 
-    ! [Abrir con Visual Studio Code] (../ media / 02-open_with_code.jpg)
+    <img src="/media/02-open_with_code.jpg">
 
     > Alternativamente, puede ejecutar un símbolo del sistema en su directorio actual y ejecutar el comando `` código ''.
 
