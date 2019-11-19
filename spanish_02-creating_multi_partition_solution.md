@@ -38,7 +38,7 @@ En esta práctica de laboratorio, creará varios contenedores de Azure Cosmos DB
     dotnet add package Microsoft.Azure.DocumentDB.Core --version 1.9.1
     `` `
 
-    > Este comando agregará el paquete [Microsoft.Azure.DocumentDB.Core] (../media/https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core/) NuGet como una dependencia del proyecto. Las instrucciones de laboratorio se probaron con la versión `` 1.9.1 '' de este paquete NuGet.
+    > Este comando agregará el paquete Microsoft.Azure.DocumentDB.Core NuGet como una dependencia del proyecto. Las instrucciones de laboratorio se probaron con la versión `` 1.9.1 '' de este paquete NuGet.
 
 1. En el panel de terminales, ingrese y ejecute el siguiente comando:
 
@@ -46,7 +46,7 @@ En esta práctica de laboratorio, creará varios contenedores de Azure Cosmos DB
     dotnet add package Bogus - versión 22.0.8
     `` `
 
-    > Este comando agregará el paquete NuGet [Bogus] (../media/https://www.nuget.org/packages/Bogus/) como una dependencia del proyecto. Esta biblioteca nos permitirá generar rápidamente datos de prueba usando una sintaxis fluida y un código mínimo. Utilizaremos esta biblioteca para generar documentos de prueba para cargar en nuestra instancia de Azure Cosmos DB. Las instrucciones de laboratorio se probaron con la versión `` 22.0.8 '' de este paquete NuGet.
+    > Este comando agregará el paquete NuGet Bogus como una dependencia del proyecto. Esta biblioteca nos permitirá generar rápidamente datos de prueba usando una sintaxis fluida y un código mínimo. Utilizaremos esta biblioteca para generar documentos de prueba para cargar en nuestra instancia de Azure Cosmos DB. Las instrucciones de laboratorio se probaron con la versión `` 22.0.8 '' de este paquete NuGet.
 
 1. En el panel de terminales, ingrese y ejecute el siguiente comando:
 
