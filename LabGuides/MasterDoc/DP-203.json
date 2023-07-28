@@ -19,6 +19,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/vijay-spektra/CloudLabs/master/LabGuides/DP-203/02.md",
         "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/vijay-spektra/CloudLabs/master/LabGuides/DP-203/04.md",
+        "Order": 5
       }
     ]
   }
